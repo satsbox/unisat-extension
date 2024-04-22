@@ -505,7 +505,7 @@ function Step2({
       } else {
         const option = hdPathOptions[contextData.addressTypeIndex];
         const hdPath = contextData.customHdPath || option.hdPath;
-        await createAccount(contextData.mnemonics, hdPath, contextData.passphrase, contextData.addressType, 1);
+        await createAccount(contextData.mnemonics, hdPath, contextData.passphrase, contextData.addressType, 100);
       }
       navigate('MainScreen');
     } catch (e) {
